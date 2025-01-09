@@ -1,0 +1,17 @@
+{
+    "domain": "save_eco_bot",
+    "name": "Saveecobot",
+    "codeowners": [
+      "@reidMaks"
+    ],
+    "config_flow": true,
+    "dependencies": [],
+    "documentation": "https://www.home-assistant.io/integrations/save_eco_bot",
+    "homekit": {},
+    "iot_class": "cloud_polling",
+    "requirements": [],
+    "ssdp": [],
+    "zeroconf": [],
+    "version": "0.0.1"
+  }
+  
