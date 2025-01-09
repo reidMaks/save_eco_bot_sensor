@@ -13,6 +13,8 @@
     "issue_tracker": "https://github.com/reidMaks/save_eco_bot_sensor/issues",
     "ssdp": [],
     "zeroconf": [],
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "icon": "custom_components/save_eco_bot/icon.png",
+    "logo": "custom_components/save_eco_bot/logo.png"
   }
   
