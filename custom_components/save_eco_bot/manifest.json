@@ -6,10 +6,11 @@
     ],
     "config_flow": true,
     "dependencies": [],
-    "documentation": "https://www.home-assistant.io/integrations/save_eco_bot",
+    "documentation": "https://github.com/reidMaks/save_eco_bot_sensor/blob/main/README.md",
     "homekit": {},
     "iot_class": "cloud_polling",
     "requirements": [],
+    "issue_tracker": "https://github.com/reidMaks/save_eco_bot_sensor/issues",
     "ssdp": [],
     "zeroconf": [],
     "version": "0.0.1"
