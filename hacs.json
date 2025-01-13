@@ -1,4 +1,5 @@
 {
-    "name": "Save eco bot integration",
-    "country": ["UK"]
-  }
+  "name": "Save Eco Bot Sensor",
+  "country": "UA",
+  "homeassistant": "2025.1.0"
+}
