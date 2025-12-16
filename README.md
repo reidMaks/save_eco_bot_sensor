@@ -1,6 +1,7 @@
 # SaveEcoBot Sensor for Home Assistant
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration) [![Validate](https://github.com/reidMaks/save_eco_bot_sensor/actions/workflows/validate.yaml/badge.svg)](https://github.com/reidMaks/save_eco_bot_sensor/actions/workflows/validate.yaml)
+
 
 Custom component for Home Assistant to get air quality data from [SaveEcoBot](https://www.saveecobot.com/).
 
@@ -20,6 +21,11 @@ Custom component for Home Assistant to get air quality data from [SaveEcoBot](ht
 ## Installation
 
 ### Method 1: HACS (Recommended)
+Click the button below to open the repository in HACS directly:
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=reidMaks&repository=save_eco_bot_sensor&category=integration)
+
+Alternatively:
 1. Open HACS.
 2. Go to "Integrations".
 3. Click the 3 dots in the top right corner and select "Custom repositories".
