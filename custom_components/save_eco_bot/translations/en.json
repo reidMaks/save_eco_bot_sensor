@@ -1,0 +1,32 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Choose setup method. If you select 'Use home location coordinates', the integration will try to find the nearest stations to your Home Assistant location.",
+                "data": {
+                    "use_coordinates": "Use home location coordinates?"
+                }
+            },
+            "city": {
+                "description": "Select a city from the list to see available stations.",
+                "data": {
+                    "city": "City"
+                }
+            },
+            "sensors": {
+                "description": "Select the sensors you want to add to Home Assistant.",
+                "data": {
+                    "sensors": "Sensors"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect to SaveEcoBot API",
+            "no_cities_available": "Could not fetch list of cities",
+            "no_sensors_available": "No sensors found for this selection"
+        },
+        "abort": {
+            "already_configured": "Device is already configured"
+        }
+    }
+}

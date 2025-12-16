@@ -7,6 +7,7 @@ from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 
 from .api import SaveEcoBotClient
+from .coordinator import SaveEcoBotCoordinator
 from .const import DOMAIN
 
 PLATFORMS: list[Platform] = [Platform.SENSOR]
@@ -15,14 +16,18 @@ PLATFORMS: list[Platform] = [Platform.SENSOR]
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up SaveEcoBot from a config entry."""
     # Створення екземпляра API-клієнта
-    client = (
-        SaveEcoBotClient()
-    )  # Додайте аргументи, якщо потрібні (наприклад, ключ API)
+    client = SaveEcoBotClient()
 
-    # Збереження клієнта у hass.data
+    # Створення координатора
+    coordinator = SaveEcoBotCoordinator(hass, client)
+    
+    # Перше завантаження даних
+    await coordinator.async_config_entry_first_refresh()
+
+    # Збереження координатора у hass.data
     if DOMAIN not in hass.data:
         hass.data[DOMAIN] = {}
-    hass.data[DOMAIN][entry.entry_id] = client
+    hass.data[DOMAIN][entry.entry_id] = coordinator
 
     # Передаємо конфігурацію платформам
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
